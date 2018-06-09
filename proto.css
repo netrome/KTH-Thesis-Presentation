@@ -1,8 +1,21 @@
 body {
     background-color: #0e103e;
     font-family: Helvetica;
+    font-size: 32px;
     color: white;
     transition: all 1s ease-in;
+}
+
+h1 { 
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+ul {
+    line-height: 48px;
 }
 
 .step {
@@ -12,6 +25,7 @@ body {
     margin: auto;
     box-sizing: border-box;
     opacity: 0.3;
+    transition: opacity 1s ease-in;
 }
 
 .purple {
@@ -23,27 +37,18 @@ body {
 }
 
 .slide {
-    min-width: 1024px;
-    min-height: 768px;
-    background-color: white;
-    color: black;
-    opacity: 1;
+    min-width: 1000px;
+    min-height: 744px;
+    background-color: #F2F2F5;
+    color: #0e103e;
     margin: auto;
-    padding: 5px;
+    padding: 20px;
     box-sizing: border-box;
     box-shadow: 1px 1px 2px 2px #33333333;
 }
 
 .impress-on-intro {
     background-color: black;
-}
-
-.fade {
-    transition: opacity 1s ease-in;
-}
-
-.fade.future {
-    opacity: 0;
 }
 
 
