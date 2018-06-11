@@ -28,7 +28,7 @@
                 <h1>Generative modelling</h1>
             </div>
 
-            <div class="step" data-x="800" data-y="800" data-z="0">
+            <div class="step slide" data-x="1200" data-y="0" data-z="1500">
                 <h1>What is a generative model?</h1>
                 <ul>
                     <li>A model capable of producing data similar to the data the model have been trained on</li>
@@ -37,7 +37,7 @@
                 </ul>
             </div>
 
-            <div class="step" data-x="800" data-y="1600" data-z="0">
+            <div class="step slide" data-x="1200" data-y="1200" data-z="1500">
                 <h1>Why are generative models interesting?</h1>
                 <ul>
                     <li>Generative modelling more complex than discriminative modelling</li>
@@ -49,7 +49,7 @@
                 </ul>
             </div>
 
-            <div class="step" data-x="800" data-y="2400" data-z="0">
+            <div class="step" data-x="1200" data-y="2400" data-z="1500">
                 <p>It is difficult to construct generative models that scale</p>
             </div>
 
@@ -57,7 +57,7 @@
                 <h1>Deep Generative Models (DGMs)</h1>
             </div>
 
-            <div class="step wide" data-x="1700" data-y="800" data-z="0">
+            <div class="step slide wide" data-x="2400" data-y="0" data-z="1500">
                 <h1>Variational Autoencoders (VAEs)</h1>
                 <ul>
                     <li>Consists of an encoder and a decoder</li>
@@ -72,7 +72,7 @@
                     </ul>
             </div>
 
-            <div class="step wide" data-x="1700" data-y="1600" data-z="0">
+            <div class="step slide wide" data-x="2400" data-y="1200" data-z="1500">
                 <h1>Generative Adversarial Networks (GANs)</h1>
                 <ul>
                     <li>Consists of a generator and discriminator</li>
@@ -82,7 +82,7 @@
                 </ul>
             </div>
 
-            <div class="step wide" data-x="1700" data-y="2400" data-rotate-y="180" data-z="-5">
+            <div class="step slide wide" data-x="2400" data-y="1200" data-rotate-y="180" data-z="1450">
                 <h1>The other side of GANs</h1>
                 <ul>
                     <li>Notoriously unstable </li>
@@ -92,10 +92,12 @@
                 </ul>
             </div>
 
-            <div id="figs1" class="step" data-x="1600" data-y="3200" data-z="0">
+            <div class="step slide" data-x="2400" data-y="2400" data-z="1500">
                 <h1>Similarities between GANs and VAEs</h1>
+                <center>
                 <img src="./images/misc/GAN_illustration_for_methods.svg" height="200px" />
                 <img src="./images/misc/VAE_illustration_for_methods.svg" height="200px" />
+                </center>
             </div>
 
             <div id="augment" class="step" data-x="0" data-y="-800" data-rotate-z="-90" />
@@ -108,14 +110,6 @@
                 <br/>
                 <br/>
                 <p>In other words: Can we generate <b>useful</b> data?</p>
-            </div>
-
-            <div class="step wide" data-x="1600" data-y="-900" data-rotate-z="-90" />
-                <h1>Measuring usability of data</h1>
-                <p>Historically difficult to evaluate GANs (or other DGMs)</p>
-                <p>Common measures are Inception Score and Fréchet Inception Distance</p>
-                <p>Both of these are only valid on imagenet </p>
-                <p>We need a custom evaluation measure</p>
             </div>
 
             <div class="step wide" data-x="1600" data-y="-900" data-rotate-z="-90" />

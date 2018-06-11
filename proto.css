@@ -14,8 +14,8 @@ h2 {
     font-size: 40px;
 }
 
-ul {
-    line-height: 48px;
+li {
+    margin: 16px;
 }
 
 .teximg{
@@ -44,6 +44,14 @@ ul {
 }
 
 .step.active {
+    opacity: 1;
+}
+
+.step.future {
+    opacity: 0;
+}
+
+.slide.future {
     opacity: 1;
 }
 
