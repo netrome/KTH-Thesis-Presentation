@@ -18,6 +18,13 @@ ul {
     line-height: 48px;
 }
 
+.teximg{
+    position: relative;
+    height: 38px;
+    top: 12px;
+
+}
+
 .step {
     min-width: 700px;
     min-height: 700px;
@@ -26,6 +33,10 @@ ul {
     box-sizing: border-box;
     opacity: 0.3;
     transition: opacity 1s ease-in;
+}
+
+.wide {
+    min-width: 900px;
 }
 
 .purple {
@@ -47,8 +58,15 @@ ul {
     box-shadow: 1px 1px 2px 2px #33333333;
 }
 
+.backside {
+    background-color: #0e103e;
+}
+
 .impress-on-intro {
     background-color: black;
 }
 
+.impress-on-figs1 {
+    background-color: #01AEE9;
+}
 
