@@ -18,6 +18,15 @@ li {
     margin: 16px;
 }
 
+th, td {
+    padding: 16px;
+    text-align: left;
+}
+
+table {
+    border: 1px solid #01AEE9;
+}
+
 .teximg{
     position: relative;
     height: 38px;
@@ -31,8 +40,8 @@ li {
     position: relative;
     margin: auto;
     box-sizing: border-box;
-    opacity: 0.3;
-    transition: opacity 1s ease-in;
+    opacity: 0.2;
+    transition: opacity 0.5s ease-in;
 }
 
 .wide {
@@ -52,7 +61,7 @@ li {
 }
 
 .slide.future {
-    opacity: 0.3;
+    opacity: 1;
 }
 
 .slide {
@@ -60,6 +69,7 @@ li {
     min-height: 744px;
     background-color: #F2F2F5;
     color: #0e103e;
+    opacity: 1;
     margin: auto;
     padding: 20px;
     box-sizing: border-box;

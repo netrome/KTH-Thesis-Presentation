@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="proto.css"/>
     </head>
     <body>
-        <div id="impress" data-width="1024" data-height="768" data-max-scale="2">
+        <div id="impress" data-width="1024" data-height="768" data-transition-duration="500" data-max-scale="2">
             <div id="intro" class="step statement" data-x="0" data-y="0" data-z="0">
                 <h1>Augmenting High Dimensional Data with Deep Generative Models</h1>
                 <p>Mårten Nilsson</p>
@@ -126,12 +126,12 @@
 
             <div id="figs1" class="step wide" data-x="2400" data-y="-900" data-rotate-z="-90" />
                 <h1>Wait, are we doing supervised learning now?</h1>
-                <ol>
+                <ul>
                     <li>Deep generative models are unsupervised</li>
                     <li>But our evaluation is based on supervised learning</li>
-                </ol>
+                </ul>
                 <p>This can be solved by treating the annotations as part of the data</p>
-                <img src="./images/misc/2-channel_img_example2.svg" height="200px"/>
+                    <center><img src="./images/misc/2-channel_img_example2.svg" height="200px"/></center>
             </div>
 
             <div class="step slide" data-x="2400" data-y="2400" data-z="1500">
@@ -201,17 +201,26 @@
 
             <div class="step" data-x="1600" data-y="0">
                 <h1>Results: Synthetic data</h1>
-                <p>This is a table, you see?</p>
+                <table>
+                    <tr><th>WGAN</th><th>VAE</th><th>AEGAN</th><th>Original</th></tr>
+                    <tr><th>0.9966</th><th>0.3445</th><th>0.2084</th><th>0.11456</th></tr>
+                </table>
             </div>
 
             <div class="step" data-y="800">
-                <h1>Results: Real data</h1>
-                <p>This is yet another table</p>
+                <h1>Results: Real world data</h1>
+                <table>
+                    <tr><th>WGAN</th><th>VAE</th><th>AEGAN</th><th>Original</th></tr>
+                    <tr><th>0.8132</th><th>0.159</th><th>0.148</th><th>0.09607</th></tr>
+                </table>
             </div>
 
             <div class="step" data-y="1600">
-                <h1>Results: Toy experiments</h1>
-                <p>This is actually two tables</p>
+                <h1>Results: Data augmentation on MNIST</h1>
+                <table>
+                    <tr><th>B100</th><th>B200</th><th>B400</th><th>VAE</th><th>AEGAN</th></tr>
+                    <tr><th>0.90</th><th>1.02</th><th>0.87</th><th>1.33</th><th>0.86</th></tr>
+                </table>
             </div>
 
             <div class="step" data-x="0" data-y="-700" data-z="0" data-rotate="180">
