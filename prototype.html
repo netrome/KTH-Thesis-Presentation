@@ -62,12 +62,12 @@
                 <ul>
                     <li>Consists of an encoder and a decoder</li>
                     <li>These can be convolutional neural networks</li>
-                    <li>The encoder models <img src="./png/pld.png" class="teximg"/></li>
-                    <li>The decoder models <img src="./png/pdl.png" class="teximg"/></li>
+                    <li>The encoder models <img src="./png/pzx.png" class="teximg"/></li>
+                    <li>The decoder models <img src="./png/pxz.png" class="teximg"/></li>
                     <li>Model parameters are learned through variational inference</li>
                     <li>Trained with two objectives</li>
                     <ul>
-                        <li><img src="./png/pld.png" class="teximg"/> should be similar to a prior <img src="./png/pl.png" class="teximg"/></li>
+                        <li><img src="./png/pzx.png" class="teximg"/> should be similar to a prior <img src="./png/pz.png" class="teximg"/></li>
                         <li>When sampling <img src="./png/xsample.png" class="teximg"/>, <img src="./png/zsample.png" class="teximg"/>, the distance <img src="./png/dist.png" class="teximg"/> should be minimal</li>
                     </ul>
             </div>
@@ -164,7 +164,9 @@
 
             <div class="step wide" data-x="900" data-y="800">
                 <h1>Progressive GAN failed on this task</h1>
-                <p>--Include video here--</p>
+                <video width="800" controls>
+                    <source src="./timelapse.mp4" type="video/mp4">
+                </video>
             </div>
 
             <div class="step" data-x="-100" data-y="0" data-z="-1500">
@@ -223,10 +225,14 @@
                 </table>
             </div>
 
-            <div class="step" data-x="0" data-y="-700" data-z="0" data-rotate="180">
+            <div class="step" data-y="2400">
                 <h1>Concluding remarks</h1>
-                <p>Data augmentation using deep generative models is not feasible</p>
-                <p>...but it is possible</p>
+                <p>Data augmentation using deep generative models is not feasible...</p>
+            </div>
+
+            <div class="step" data-x="1600" data-y="2222" data-scale="0.1">
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <center><p>...but it is possible</p></center>
             </div>
 
             <div id="overview" class="step" data-x="800" data-y="-500" data-z="3800" data-rotate-x="30">
