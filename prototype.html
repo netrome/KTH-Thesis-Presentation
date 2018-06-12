@@ -14,7 +14,7 @@
                 <p>Mårten Nilsson</p>
             </div>
 
-            <div class="step slide outline" data-x="0" data-y="0" data-z="1500">
+            <div class="step slide" data-x="0" data-y="0" data-z="1500">
                 <h1>Outline</h1>
                 <ul>
                     <li>Generative modelling</li>
@@ -24,7 +24,7 @@
                 </ul>
             </div>
 
-            <div class="step" data-x="800" data-y="0" data-z="0">
+            <div class="step" data-x="0" data-y="300" data-z="0">
                 <h1>Generative modelling</h1>
             </div>
 
@@ -53,11 +53,11 @@
                 <p>It is difficult to construct generative models that scale</p>
             </div>
 
-            <div class="step" data-x="1600" data-y="0" data-z="0">
+            <div class="step wide" data-x="100" data-y="400" data-z="0">
                 <h1>Deep Generative Models (DGMs)</h1>
             </div>
 
-            <div class="step slide wide" data-x="2400" data-y="0" data-z="1500">
+            <div class="step slide" data-x="2400" data-y="0" data-z="1500">
                 <h1>Variational Autoencoders (VAEs)</h1>
                 <ul>
                     <li>Consists of an encoder and a decoder</li>
@@ -72,7 +72,7 @@
                     </ul>
             </div>
 
-            <div class="step slide wide" data-x="2400" data-y="1200" data-z="1500">
+            <div class="step slide" data-x="2400" data-y="1200" data-z="1500">
                 <h1>Generative Adversarial Networks (GANs)</h1>
                 <ul>
                     <li>Consists of a generator and discriminator</li>
@@ -82,7 +82,7 @@
                 </ul>
             </div>
 
-            <div class="step slide wide" data-x="2400" data-y="1200" data-rotate-y="180" data-z="1450">
+            <div class="step slide" data-x="2400" data-y="1200" data-rotate-y="180" data-z="1450">
                 <h1>The other side of GANs</h1>
                 <ul>
                     <li>Notoriously unstable </li>
@@ -92,19 +92,11 @@
                 </ul>
             </div>
 
-            <div class="step slide" data-x="2400" data-y="2400" data-z="1500">
-                <h1>Similarities between GANs and VAEs</h1>
-                <center>
-                <img src="./images/misc/GAN_illustration_for_methods.svg" height="200px" />
-                <img src="./images/misc/VAE_illustration_for_methods.svg" height="200px" />
-                </center>
-            </div>
-
-            <div id="augment" class="step" data-x="0" data-y="-800" data-rotate-z="-90" />
+            <div id="augment" class="step" data-x="0" data-y="500" data-z="0" data-rotate-z="0" />
                 <h1>Data augmentation</h1>
             </div>
 
-            <div class="step" data-x="800" data-y="-800" data-rotate-z="-90" />
+            <div class="step" data-x="0" data-y="-800" data-z="1500" data-rotate-z="-90" />
                 <h1>The question</h1>
                 <p><i>"Can deep generative models be applied to generate synthetic data sets that can be used to boost the performance of existing discriminative models? "</i></p>
                 <br/>
@@ -112,15 +104,17 @@
                 <p>In other words: Can we generate <b>useful</b> data?</p>
             </div>
 
-            <div class="step wide" data-x="1600" data-y="-900" data-rotate-z="-90" />
+            <div class="step wide" data-x="800" data-y="-900" data-rotate-z="-90" />
                 <h1>Measuring usability of data</h1>
-                <p>Historically difficult to evaluate GANs (or other DGMs)</p>
-                <p>Common measures are Inception Score and Fréchet Inception Distance</p>
-                <p>Both of these are only valid on imagenet </p>
-                <p>We need a custom evaluation measure</p>
+                <ul>
+                <li>Historically difficult to evaluate GANs (or other DGMs)</li>
+                <li>Common measures are Inception Score and Fréchet Inception Distance</li>
+                <li>Both of these are only valid on imagenet </li>
+                <li>We need a custom evaluation measure</li>
+                </ul>
             </div>
 
-            <div class="step wide" data-x="2400" data-y="-900" data-rotate-z="-90" />
+            <div class="step wide" data-x="1600" data-y="-900" data-rotate-z="-90" />
                 <h1>Evaluation by classification</h1>
                 <ol>
                     <li>Introduce a discriminative model (pupil localizer)</li>
@@ -129,7 +123,106 @@
                 <p>=&gt; Usable and interpretable measure of data quality</p>
             </div>
 
-            <div id="overview" class="step" data-x="0" data-y="-500" data-z="2400" data-rotate-x="40">
+
+            <div id="figs1" class="step wide" data-x="2400" data-y="-900" data-rotate-z="-90" />
+                <h1>Wait, are we doing supervised learning now?</h1>
+                <ol>
+                    <li>Deep generative models are unsupervised</li>
+                    <li>But our evaluation is based on supervised learning</li>
+                </ol>
+                <p>This can be solved by treating the annotations as part of the data</p>
+                <img src="./images/misc/2-channel_img_example2.svg" height="200px"/>
+            </div>
+
+            <div class="step slide" data-x="2400" data-y="2400" data-z="1500">
+                <h1>The constellation</h1>
+                    <p>GAN:</p>
+                <center>
+                    <img src="./images/misc/GAN_illustration_for_methods.svg" height="200px" />
+                </center>
+                    <p>VAE:</p>
+                <center>
+                    <img src="./images/misc/VAE_illustration_for_methods.svg" height="200px" />
+                </center>
+            </div>
+
+            <div id="exp" class="step" data-x="0" data-y="600" data-z="0" data-rotate-x="0">
+                <h1>Experiments and results</h1>
+            </div>
+
+            <div class="step wide" data-x="900" data-y="0" data-z="0" data-rotate-x="0">
+                <h1>Experiments</h1>
+                <p>Models:</p>
+                <ul>
+                    <li>WGAN</li>
+                    <li>VAE</li>
+                    <li>AEGAN</li>
+                    <li>(Progressive GAN)</li>
+                </ul>
+                <p>Main experiments on Pupil Localization with real and synthetic data sets</p>
+            </div>
+
+            <div class="step wide" data-x="900" data-y="800">
+                <h1>Progressive GAN failed on this task</h1>
+                <p>--Include video here--</p>
+            </div>
+
+            <div class="step" data-x="-100" data-y="0" data-z="-1500">
+                <img src="./images/reference_6x4.png" height="600px"/>
+            </div>
+
+            <div class="step" data-y="600" data-z="-1500">
+                <img src="./images/generated/wasserstein_fake_6x4.png" height="600px"/>
+            </div>
+
+            <div class="step" data-y="1200">
+                <img src="./images/generated/vae_fake_6x4.png" height="600px"/>
+            </div>
+
+            <div class="step" data-y="1800">
+                <img src="./images/generated/aegan_fake_6x4.png" height="600px"/>
+            </div>
+
+            <div class="step" data-x="800" data-y="0" data-z="-1500">
+                <img src="./images/ref_g6_6x4.png" height="600px"/>
+            </div>
+
+            <div class="step" data-y="600" data-z="-1500">
+                <img src="./images/generated/wgan_g6_6x4.png" height="600px"/>
+            </div>
+
+            <div class="step" data-y="1200">
+                <img src="./images/generated/vae_g6_6x4.png" height="600px"/>
+            </div>
+
+            <div class="step" data-y="1800">
+                <img src="./images/generated/aegan_g6_6x4.png" height="600px"/>
+            </div>
+
+            <div class="step" data-x="1600" data-y="0">
+                <h1>Results: Synthetic data</h1>
+                <p>This is a table, you see?</p>
+            </div>
+
+            <div class="step" data-y="800">
+                <h1>Results: Real data</h1>
+                <p>This is yet another table</p>
+            </div>
+
+            <div class="step" data-y="1600">
+                <h1>Results: Toy experiments</h1>
+                <p>This is actually two tables</p>
+            </div>
+
+            <div class="step" data-x="0" data-y="-700" data-z="0" data-rotate="180">
+                <h1>Concluding remarks</h1>
+                <p>Data augmentation using deep generative models is not feasible</p>
+                <p>...but it is possible</p>
+            </div>
+
+            <div id="overview" class="step" data-x="800" data-y="-500" data-z="3800" data-rotate-x="30">
+            </div>
+
 
         </div>
     </body>
