@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="proto.css"/>
     </head>
     <body>
+        <p id="clock"></p>
         <div id="impress" data-width="1024" data-height="768" data-transition-duration="1000" data-max-scale="2">
             <div id="intro" class="step statement" data-x="0" data-y="0" data-z="0">
                 <h1>Augmenting High Dimensional Data with Deep Generative Models</h1>
@@ -252,4 +253,22 @@
 
 <script src="impress.js"></script>
 <script>impress().init();</script>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById("clock").innerHTML =
+        h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+startTime()
+</script>
 </html>

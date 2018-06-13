@@ -95,3 +95,10 @@ table {
     text-shadow: 5, 5, 5, 5, black;
 }
 
+#clock {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+}
