@@ -88,3 +88,10 @@ table {
     background-color: #01AEE9;
 }
 
+.imgtext {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    text-shadow: 5, 5, 5, 5, black;
+}
+
